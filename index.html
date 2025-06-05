@@ -1,146 +1,122 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Refúgio da Praia</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casa de Temporada - Bem-vindo</title>
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.min.css" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f8f8f8;
-      color: #333;
-    }
-    header {
-      background: #004b50;
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; }
+    header, footer { background: #2c3e50; color: white; text-align: center; padding: 1em 0; }
+    nav a { margin: 0 15px; color: white; text-decoration: none; font-weight: bold; }
+    section { padding: 20px; max-width: 1000px; margin: auto; }
+    h2 { border-bottom: 2px solid #eee; padding-bottom: 5px; }
+    .gallery img { width: 30%; margin: 1%; border-radius: 8px; }
+    iframe { width: 100%; border: none; height: 400px; }
+    .calendar { margin-top: 30px; }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
       color: white;
-      padding: 1.5rem;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
       text-align: center;
+      font-size: 30px;
+      line-height: 60px;
+      z-index: 100;
     }
-    .hero {
-      background: url('https://source.unsplash.com/featured/?beach-house') no-repeat center/cover;
-      height: 60vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-size: 2rem;
-      font-weight: bold;
-      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
-    }
-    .section {
-      padding: 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .section h2 {
-      color: #004b50;
-      margin-bottom: 1rem;
-    }
-    .features, .contact {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-    }
-    .card {
-      flex: 1 1 300px;
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      padding: 1rem;
-    }
-    iframe {
-      width: 100%;
-      height: 600px;
-      border: none;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: #004b50;
-      color: white;
-      margin-top: 2rem;
-    }
-    input, button, textarea {
-      width: 100%;
-      padding: 0.5rem;
-      margin-top: 0.25rem;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-size: 1rem;
-    }
-    button {
-      background-color: #004b50;
-      color: white;
-      cursor: pointer;
-      margin-top: 1rem;
-    }
-    button:hover {
-      background-color: #006d74;
-    }
+    .whatsapp-float:hover { background-color: #128c7e; }
   </style>
 </head>
 <body>
   <header>
-    <h1>Refúgio da Praia</h1>
-    <p>Hospede-se com conforto e estilo a poucos passos do mar</p>
+    <h1>Casa de Temporada Maravilhosa</h1>
+    <nav>
+      <a href="#fotos">Fotos</a>
+      <a href="#beneficios">Benefícios</a>
+      <a href="#reserva">Reservar</a>
+      <a href="#localizacao">Localização</a>
+      <a href="#avaliacoes">Avaliações</a>
+      <a href="#blog">Blog</a>
+    </nav>
   </header>
-  <div class="hero">
-    Sua casa de temporada dos sonhos
-  </div>
-  <section class="section">
-    <h2>Destaques do Imóvel</h2>
-    <div class="features">
-      <div class="card">
-        <h3>Vista para o mar</h3>
-        <p>Desfrute de uma vista espetacular todos os dias, direto da varanda.</p>
-      </div>
-      <div class="card">
-        <h3>Wi-Fi Rápido</h3>
-        <p>Internet de alta velocidade para home office ou streaming.</p>
-      </div>
-      <div class="card">
-        <h3>Cozinha Completa</h3>
-        <p>Com todos os utensílios e eletros para você se sentir em casa.</p>
-      </div>
-    </div>
+
+  <section id="fotos" class="gallery">
+    <h2>Fotos</h2>
+    <img src="https://via.placeholder.com/300x200" alt="Foto 1">
+    <img src="https://via.placeholder.com/300x200" alt="Foto 2">
+    <img src="https://via.placeholder.com/300x200" alt="Foto 3">
   </section>
-  <section class="section">
-    <h2>Calendário de Reservas</h2>
-    <iframe src="https://calendar.google.com/calendar/embed?src=seu_email%40gmail.com&ctz=America%2FSao_Paulo"></iframe>
-    <p style="margin-top: 1rem;">Para reservar, entre em contato pelo WhatsApp abaixo ou preencha o formulário.</p>
+
+  <section id="beneficios">
+    <h2>Benefícios</h2>
+    <ul>
+      <li>Piscina privativa</li>
+      <li>Wi-Fi de alta velocidade</li>
+      <li>Cozinha equipada</li>
+      <li>Ar-condicionado</li>
+      <li>Pet friendly</li>
+    </ul>
   </section>
-  <section class="section contact">
-    <div class="card">
-      <h3>Contato</h3>
-      <p><strong>WhatsApp:</strong> <a href="https://wa.me/55SEUNUMERO" target="_blank">Clique para conversar</a></p>
-      <p><strong>Email:</strong> contato@suacasadepraia.com</p>
-      <p><strong>Localização:</strong> Guaratuba, PR</p>
-    </div>
-    <div class="card">
-      <h3>Formulário de Reserva + Pagamento</h3>
-      <form onsubmit="return redirecionarPagamento();">
-        <label>Nome:<br /><input type="text" required /></label><br />
-        <label>Email:<br /><input type="email" required /></label><br />
-        <label>Data de entrada:<br /><input type="date" required /></label><br />
-        <label>Data de saída:<br /><input type="date" required /></label><br />
-        <label>Quantidade de hóspedes:<br /><input type="number" min="1" max="10" required /></label><br />
-        <p>Valor fixo por estadia: <strong>R$ 600,00</strong></p>
-        <button type="submit">Pagar e Reservar</button>
-      </form>
-    </div>
+
+  <section id="reserva">
+    <h2>Disponibilidade e Reserva</h2>
+    <div id='calendar' class="calendar"></div>
+    <button onclick="window.location.href='https://wa.me/5500000000000'">Reservar pelo WhatsApp</button>
+    <p><strong>Valores:</strong> Baixa temporada: R$350/noite | Alta: R$600/noite</p>
+    <p><strong>Taxas:</strong> Limpeza R$100 por estadia</p>
+    <p><strong>Política de cancelamento:</strong> Cancelamento gratuito até 7 dias antes da reserva</p>
   </section>
+
+  <section id="localizacao">
+    <h2>Localização</h2>
+    <iframe src="https://maps.google.com/maps?q=Praia%20de%20Guaratuba&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+  </section>
+
+  <section id="avaliacoes">
+    <h2>Avaliações de Hóspedes</h2>
+    <blockquote>"Casa limpa e muito bem localizada. Anfitrião atencioso." — João, São Paulo</blockquote>
+    <blockquote>"Voltarei com certeza! Tudo perfeito." — Ana, Curitiba</blockquote>
+  </section>
+
+  <section id="blog">
+    <h2>Dicas Locais</h2>
+    <article>
+      <h3>As melhores praias para visitar</h3>
+      <p>Conheça as praias imperdíveis da região, como a Praia Central, Coroados e Caieiras.</p>
+    </article>
+    <article>
+      <h3>Onde comer bem em Guaratuba</h3>
+      <p>Dicas de restaurantes locais com frutos do mar frescos e boa gastronomia.</p>
+    </article>
+  </section>
+
   <footer>
-    &copy; 2025 Refúgio da Praia - Todos os direitos reservados.
+    <p>&copy; 2025 Casa de Temporada - Todos os direitos reservados</p>
   </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/5500000000000" target="_blank">📱</a>
+
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.min.js"></script>
   <script>
-    function redirecionarPagamento() {
-      window.open("https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=SEU_ID_DE_PAGAMENTO", "_blank");
-      alert("Você será redirecionado para o pagamento. Após a confirmação, entraremos em contato.");
-      return false;
-    }
+    document.addEventListener('DOMContentLoaded', function () {
+      const calendarEl = document.getElementById('calendar');
+      const calendar = new FullCalendar.Calendar(calendarEl, {
+        locale: 'pt-br',
+        initialView: 'dayGridMonth',
+        events: [
+          {
+            title: '🔴 Reservado (Airbnb)',
+            start: '2025-06-10',
+            end: '2025-06-13'
+          }
+        ]
+      });
+      calendar.render();
+    });
   </script>
 </body>
 </html>
